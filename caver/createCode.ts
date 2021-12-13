@@ -8,7 +8,7 @@ export function createCode(name: string, contract: Contract) {
             return __interface.name == name;
         });
         return {
-          jsonInterface:_jsonInterface,
+          jsonInterface:_interface,
           args: p,
         }
     }

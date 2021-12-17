@@ -5,3 +5,4 @@ caver/**.d.ts
 credential.json
 build
 created-codes
+.DS_Store

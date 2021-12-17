@@ -1,6 +1,6 @@
 {
   "name": "@mk87/opensea-contract",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "REMIX EXAMPLE PROJECT",
   "main": "created-codes/index.js",
   "directories": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "deploy": "npm run build && node caver/deploy",
+    "deploy": "tsc && node caver/deploy && tsc",
     "truffle:compile": "truffle compile"
   },
   "repository": {

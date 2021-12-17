@@ -5,8 +5,8 @@ import * as path from "path";
 
 import Caver from "caver-js";
 
-import MASTokenJson from "../build/contracts/ERC1155Factory.json";
-import NFTSalesJson from "../build/contracts/NFTSales.json";
+import MASTokenJson from "../build/contracts/KIP17Token.json";
+import NFTSalesJson from "../build/contracts/MasSales.json";
 import { createCode } from "./createCode";
 
 (async () => {
@@ -52,9 +52,7 @@ import { createCode } from "./createCode";
     },
     MASTokenJson.bytecode,
     "Music Ark Station",
-    "MAS",
-    "0xa5409ec958c83c3f309868babaca7c86dcb077c1",
-    ""
+    "MAS"
   );
 
   const NFTSales = await new caver.contract(
